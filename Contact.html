@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstek & Şikayet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<style>
+
+body {
+
+  background-color: #333;
+  
+}
+
+.contact-us-section{
+    background-color: #000;
+    min-height: 400px;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 8px -7px rgba(0,0,0,0.5);
+}        
+.contact-us-section h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-us-section h2 span{
+    display: block;
+    text-transform: unset;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.6;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.contact-us-section .section-title {
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-us-form{
+    margin: 35px 25px;
+}
+.contact-us-form .form-group{
+    margin-bottom: 30px;
+}
+.contact-us-form label{
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.contact-us-form input,
+.contact-us-form textarea {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #515151;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+   background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) calc(100% - 2px), #fff calc(100% - 2px), #fff 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) calc(100% - 2px), #fff calc(100% - 2px), #fff 100%);
+    background-position: 0 0;
+    background-size: 0px 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 18px;
+    resize: none;
+}
+
+.contact-us-form input:focus, 
+.contact-us-form input:valid, 
+.contact-us-form textarea:focus,  
+.contact-us-form textarea:valid {
+    box-shadow: none;
+    outline: none;
+    background-size: 100% 100%;
+    
+}
+
+
+button.btn-send-message{
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: unset;
+    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.25);
+    padding:10px 25px;
+    border:0px;
+    background-color: #3333;
+    text-transform: uppercase;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="container contact-us-section">
+  <div class="row h-100">
+    <div class="col-md-3 section-title">
+      <h2>Bize Ulaşın <span>İstek & Şikayet</span></h2>
+    </div>
+    <div class="col-md-9">
+      <form accept="javascript:void(0)" method="POST" action="javascript:void(0)" class="contact-us-form">
+        <div class="form-group">
+          <label for="inputName">Ad : </label>
+          <input placeholder="Adınızı giriniz" type="text" required id="inputName" name="name">
+        </div>
+        <div class="form-group">
+          <label for="inputEmailAddress">E-mail Adresi :</label>
+          <input placeholder="E-mail adresinizi giriniz" type="text" required id="inputEmailAddress" name="emailAddress">
+        </div>
+        <div class="form-group">
+          <label for="inputComment">Mesaj :</label>
+          <textarea placeholder="İstek & Şikayetinizi giriniz" required id="inputComment" rows="2" name="inputMessage"></textarea>
+        </div>
+        <div class="form-group clearfix">
+          <button data-id="#accessories-holder" class="red-select-btn model-selector btn-send-message"><span>Onayla</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+   
+    
+</body>
+
+</html>

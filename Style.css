@@ -1,0 +1,219 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+font-size: 10px;
+
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color:#333;
+}
+
+a {
+
+text-decoration: none;
+
+}
+
+p {
+
+    padding: 1.6rem;
+    font-size: 2rem;
+
+}
+
+img {
+
+    width: 100%;
+    height: auto;
+}
+
+.clearfix ::after {
+
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a {
+    font-size: 15px;
+    color: #fff!important;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.dropdown-menu a {
+    font-size: 15px;
+    color: #333!important;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-overlay .icon {
+    color:beige;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header {
+
+    height: 45rem;
+
+}
+
+header .bg-image {
+
+    position: absolute;
+    background-image: url(img/main.png);
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+}
+
+header h1 {
+
+    padding: 11rem;
+    padding-bottom: 0;
+    color: #fff;
+
+}
+
+
+header p {
+
+    color: #fff;
+
+}
+
+.btn {
+    
+    display: inline-block;
+    background-color: #333;
+    color: #ffff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all;
+
+}
+
+.btn:hover {
+
+    background-color: #eaeaea;
+    color: #333;
+}
+
+
+#section-a {
+
+    background-color: #333;
+    color: #eaeaea ;
+    padding: 3.2rem 0;
+}
+
+
+#bg {
+
+    background-color: black;
+}
+
+#section-b {
+
+    padding: 2rem;
+}
+
+#section-b ul {
+
+    list-style: none;
+
+}
+
+#section-b li {
+
+    background: #333;
+    color: #fff;
+    margin-bottom: 1.3rem;
+}
+
+#section-c {
+
+    background-color: #333;
+    color:  #eaeaea;
+    padding: 5rem;
+
+}
+
+#section-d .box {
+
+    padding: 5rem;
+    background-color: #131313;
+    color: #eaeaea;
+}
+
+
+footer {
+
+    padding: 5rem;
+    background: #000;
+    color: #eaeaea;
+}
+
+footer a {
+
+    color: rgb(189, 101, 20);
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    #section-b li {
+
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+
+        width: 50%;
+    
+        float: left;
+    }
+
+    html {
+
+        font-size: 10px;
+    }
+
+
+}
